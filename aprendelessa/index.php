@@ -53,16 +53,18 @@
         <div class="row">
 
             <div class="header-logo">
-                <a class="site-logo" href="index.html"><img src="vista/template_principal/images/logo.svg" alt="Homepage"></a>
+                <a class="site-logo"> <img src="vista/template_principal/images/logo.svg" alt="Homepage"></a>
             </div>
             
             <nav class="header-nav-wrap">
                 <ul class="header-nav">
-                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Principal</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="Acerca">Acerca</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="servicios">Servicios</a></li>
                     <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
-                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contactanos">Contactanos</a></li>
+                    <li><a href="registrar.php" title="registrar">Registrate</a></li>
+                    <li><a href="login.php"  title="contact">Inicia Sesion</a></li>
                 </ul>
             </nav> <!-- end header-nav-wrap -->
             
@@ -77,7 +79,7 @@
 
     <!-- home
     ================================================== -->
-    <section id="principal" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="vista/template_principal/images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="vista/template_principal/images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="shadow-overlay"></div>
 
@@ -123,12 +125,6 @@
             </li>
             <li>
                 <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i><span>Behance</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
             </li>
         </ul> <!-- end home-social -->
 
