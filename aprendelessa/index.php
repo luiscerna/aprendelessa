@@ -1,6 +1,1 @@
-<?php
-
-require_once "controlador/login.php";
-
-$template = new controladorTemplate();			//El objeto hereda la clase controladorTemplate
-$template -> template(); 
+<!-- ACÁ DEBE IR LA PARTE DEL INDEX DE LA PLANTILLA PRINCIPAL -->
