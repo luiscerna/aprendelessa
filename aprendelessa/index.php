@@ -61,10 +61,10 @@
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Principal</a></li>
                     <li><a class="smoothscroll"  href="#about" title="Acerca">Acerca</a></li>
                     <li><a class="smoothscroll"  href="#services" title="servicios">Servicios</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="videos">Videos</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contactanos">Contactanos</a></li>
                     <li><a href="registrar.php" title="registrar">Registrate</a></li>
-                    <li><a href="login.php"  title="contact">Inicia Sesion</a></li>
+                    <li><a href="login.php"  title="iniciar">Iniciar Sesion</a></li>
                 </ul>
             </nav> <!-- end header-nav-wrap -->
             
@@ -88,14 +88,14 @@
             <div class="row home-content__main">
 
                 <h1>
-                We provide creative <br>
-                solutions to turn your <br>
-                ideas into digital reality
+                Creemos en una novedosa<br>
+                forma de aprendizaje de<br>
+                LESSA.
                 </h1>
 
                 <div class="home-content__button">
                     <a href="#about" class="smoothscroll btn btn-animatedbg">
-                        More About Us
+                        Más acerca de nosotros
                     </a>
                 </div>
 
@@ -121,7 +121,7 @@
                 <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
             </li>
             <li>
-                <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+                <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
             </li>
             <li>
                 <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
@@ -137,13 +137,12 @@
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 data-num="01" class="subhead">Who We Are</h3>
+                <h3 data-num="01" class="subhead">Quienes Somos</h3>
                 <h1 class="display-1">
-                Stellar is a branding agency based in Somewhere. We design thoughtful digital 
-                experiences and beautiful brand aesthetics.
+                AprendeLessa es el sitio ideal para poder iniciar tus estudios de Lengua de Señas Salvadoreña  y poder construir una mejor sociedad. 
                 </h1>
                 <p class="lead">
-                Quia iusto totam facilis ut atque quidem quis maiores iure. Facilis mollitia enim illo sed et totam commodi. Velit a recusandae sequi consequatur est dolorum. Eaque accusantium praesentium ut omnis. Laboriosam reprehenderit commodi assumenda.
+               	Construir una mejor sociedad en la cual se pueda facilitar la comunicación con las personas sordas, facilitando la integración de ellas a la sociedad.
                 </p>
             </div>
         </div>
@@ -194,7 +193,7 @@
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 data-num="02" class="subhead">What We Do</h3>
+                <h3 data-num="02" class="subhead">Lo que hacemos</h3>
                 <h1 class="display-1 display-1--light">
                 Our services are tailored to make your business grow and stand out.
                 </h1>
