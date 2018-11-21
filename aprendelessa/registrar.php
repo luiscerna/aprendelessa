@@ -107,11 +107,12 @@
 			}
 
 			if(error == ""){
+				// Primero comprobar si existe el correo
 				var parametros = {
 					'correo': $("#txt_correo").val(),
 				}
 
-				axios.get("../Controlador/Usuario/comprobar_correo.php", {
+				axios.get("Controlador/Usuario/comprobar_correo.php", {
 
         params: parametros
 
@@ -130,7 +131,7 @@
 						}
 
 						// Se procede a registrar
-						axios.get("../Controlador/Usuario/registrar_usuario.php", {
+						axios.get("Controlador/Usuario/registrar_usuario.php", {
 
 		        params: parametros
 
@@ -149,6 +150,8 @@
 	        alert('Han ocurrido algunos problemas, intente nuevamente más tarde.');
 	        console.log('Ha ocurrido el siguiete error: '+e);
 	      });
+			} else {
+
 			}
 		});
 

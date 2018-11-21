@@ -49,8 +49,8 @@
     }
 
     //Seleccionar datos para login iniciarsesion.php
-    /*public function selectIniciarSesion(){
-      $query = "CALL selectIniciarSesion('".parent::string($this->getCorreo())."', '".parent::string($this->getContrasenia())."');";
+    public function selectIniciarSesion(){
+      $query = "SELECT codUsuario, nombre, sexo, count(*) as existe FROM usuario WHERE correo = '".parent::string($this->getCorreo())."' AND contrasenia = '".parent::string($this->getContrasenia())."' LIMIT 1;";
       $result = mysqli_query(parent::conexion(), $query);
       if($result){
         $fila = mysqli_fetch_array($result);
@@ -61,7 +61,7 @@
         parent::desconectar();
         return false;
       }
-    }*/
+    }
 
     //Guardar datos de inicio de sesion
     /*public function inicioSesion(){
