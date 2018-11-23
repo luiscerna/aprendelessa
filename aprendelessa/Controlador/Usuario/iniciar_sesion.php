@@ -9,6 +9,7 @@
     if($fila["existe"] == 1){
       $_SESSION["codUsuario"] = $fila["codUsuario"];
       $_SESSION["nombre"] = $fila["nombre"];
+      $_SESSION["apellido"]= $fila["apellido"];
       echo "true";
     } else{
       echo "false";

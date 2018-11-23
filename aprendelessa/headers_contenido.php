@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="vista/template_contenido/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="vista/template_contenido/assets/vendor/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="vista/template_contenido/assets/vendor/linearicons/style.css">
+	<link rel="stylesheet" href="vista/template_contenido/assets/vendor/chartist/css/chartist-custom.css">
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="vista/template_contenido/assets/css/main.css">
 	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
