@@ -4,7 +4,7 @@
 	if(array_key_exists("codUsuario", $_SESSION)){
 		header("Location: principal.php");
 	}
-	
+
 	$titulo = "APRENDELESSA | Login";
 	include("headers_contenido.php");
 ?>
@@ -41,13 +41,13 @@
 								</label>
 							</div>
 							<button type="submit" class="btn btn-primary btn-lg btn-block" id="btn_inicia_sesion">INICIAR SESIÓN</button>
+							<p>¿No tienes una cuenta?    <a href="registrar.php">Registrate</a></p>
 						</div>
 					</div>
 					<div class="right">
 						<div class="overlay"></div>
 						<div class="content text">
-							<h1 class="heading">Inicia Sesión en el mejor sitio para aprender LESSA</h1>
-							<p>by The Develovers</p>
+							<h1 class="heading">Inicia sesión en el mejor sitio para aprender LESSA</h1>
 						</div>
 					</div>
 					<div class="clearfix"></div>
@@ -63,7 +63,17 @@
 
 		});
 
+		$(document).keypress(function(e) {
+			if(e.which == 13) {
+				iniciarSesion();
+			}
+		});
+
 		$("#btn_inicia_sesion").click(function(){
+			iniciarSesion();
+		});
+
+		function iniciarSesion() {
 			var error = "";
 
 			if(!emailRegex.test($("#txt_correo").val()) || $("#txt_correo").val() == ""){
@@ -93,7 +103,7 @@
 
 	      }).then(response => {
 					//console.log(response.data[0].existe);
-
+					console.log(response);
 					if(response.data[0].existe > 0){
 
 						var parametros = {
@@ -107,6 +117,7 @@
 
 			      }).then(response => {
 							//console.log(response.data[0].existe);
+							console.log(response);
 							console.log(response.data);
 							if(response.data == true){
 								window.location.href = "principal.php";
@@ -130,9 +141,9 @@
 
 			} else {
 				$(".alert-danger").css({"display":"block"});
-				$("#mensaje_error").html(" Hay campos vacios o no son correctos.")
+				$("#mensaje_error").html(" Hay campos vacios o no son correctos.");
 			}
-		});
+		}
 	</script>
 	<?php
 		include("footer_contenido.php");

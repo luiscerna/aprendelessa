@@ -63,13 +63,28 @@
       }
     }
 
-    //Guardar datos de inicio de sesion
-    /*public function inicioSesion(){
-      $query = "CALL inicioSesion(".parent::string($this->getIdusuario()).");";
+    // Cargar datos del usuario para la parte del perfil.php
+    public function cargarUsuario(){
+      $query = "SELECT nombre, apellido, sexo, DATE_FORMAT(fecha_nac, '%d/%l/%Y') as fecha_nac, correo FROM usuario WHERE codUsuario = ".parent::string($this->getCodUsuario()).";";
+      $result = mysqli_query(parent::conexion(), $query);
+      $arreglo = null;
+
+      if(!$result){
+      		die("Error");
+      } else{
+        while($data = mysqli_fetch_assoc($result)){
+          $arreglo[] = $data;
+  		  }
+      }
+
+      parent::desconectar();
+      return json_encode($arreglo);
+    }
+
+    public function updateUsuario(){
+      $query = "UPDATE usuario SET nombre = '".parent::string($this->getNombre())."', apellido = '".parent::string($this->getApellido())."', sexo = '".parent::string($this->getSexo())."', fecha_nac = '".parent::string($this->getFecha_Nac())."' WHERE codUsuario = ".parent::string($this->getCodUsuario()).";";
       $result = mysqli_query(parent::conexion(), $query);
       if($result){
-        $fila = mysqli_fetch_array($result);
-        $this->setIdInicios_Sesion($fila["idinicios_sesion"]);
         parent::desconectar();
         return true;
       } else{
@@ -77,7 +92,39 @@
         parent::desconectar();
         return false;
       }
-    }*/
+    }
+
+    //Comprobar si el correo ya está registrado registrar.php
+    public function comprobarContrasenia(){
+      $query = "SELECT COUNT(*) AS iguales FROM usuario WHERE codUsuario = ".parent::string($this->getCodUsuario())." AND contrasenia = '".parent::string($this->getContrasenia())."';";
+      $result = mysqli_query(parent::conexion(), $query);
+      $arreglo = null;
+
+      if(!$result){
+          die("Error");
+      } else{
+        while($data = mysqli_fetch_assoc($result)){
+          $arreglo[] = $data;
+        }
+      }
+
+      parent::desconectar();
+      return json_encode($arreglo);
+    }
+
+    // Cambiar contraseña
+    public function cambiarContrasenia($contrasenia_nueva){
+      $query = "UPDATE usuario SET contrasenia = '".parent::string($contrasenia_nueva)."' WHERE codUsuario = ".parent::string($this->getCodUsuario())." AND contrasenia = '".parent::string($this->getContrasenia())."';";
+      $result = mysqli_query(parent::conexion(), $query);
+      if($result){
+        parent::desconectar();
+        return true;
+      } else{
+        echo parent::conexion()->error;
+        parent::desconectar();
+        return false;
+      }
+    }
 
     public function setCodUsuario($codUsuario){
       $this->codUsuario = $codUsuario;

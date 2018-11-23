@@ -15,6 +15,6 @@
       echo "false";
     }
   } else{
-    //header("Location: ../../index.php");
+    header("Location: ../../index.php");
   }
 ?>
