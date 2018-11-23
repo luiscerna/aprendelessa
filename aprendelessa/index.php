@@ -100,7 +100,7 @@
                 </div>
 
                 <div class="home-content__video">
-                    <a class="video-link" href="https://player.vimeo.com/video/117310401?color=01aef0&title=0&byline=0&portrait=0" data-lity>
+                    <a class="video-link" href="https://www.youtube.com/watch?v=mhi6g_0Nfn8" data-lity>
                         <span class="video-icon"></span>
                         <span class="video-text">Play Video</span>
                     </a>

@@ -140,7 +140,7 @@
 							//alert("Se ha registrado "+response.data);
 							console.log(response);
 							console.log("Ya te haz registrado!");
-							window.location.href = "login.php";
+							window.location.href = "login.php";  
 			      }).catch(e => {
 			        alert('Han ocurrido algunos problemas, intente nuevamente más tarde.');
 			        console.log('Ha ocurrido el siguiete error: '+e);
