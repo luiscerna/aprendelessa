@@ -1,6 +1,18 @@
-<!-- ACÁ DEBE IR LA PARTE DEL INDEX DE LA PLANTILLA PRINCIPAL -->
+<?php
+  session_start();
+
+  if(array_key_exists("cerrar", $_GET)){
+    session_unset();
+  }
+
+  if(array_key_exists("codUsuario", $_SESSION)){
+    header("Location: principal.php");
+  }
+
+?>
+
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
 <head>
 
     <!--- basic page needs
@@ -34,7 +46,7 @@
 
 
 <body id="top">
-    
+
     <!-- preloader
     ================================================== -->
     <div id="preloader">
@@ -55,7 +67,7 @@
             <div class="header-logo">
                 <a class="site-logo"> <img src="vista/template_principal/images/logo.svg" alt="Homepage"></a>
             </div>
-            
+
             <nav class="header-nav-wrap">
                 <ul class="header-nav">
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Principal</a></li>
@@ -67,7 +79,7 @@
                     <li><a href="login.php"  title="iniciar">Iniciar Sesion</a></li>
                 </ul>
             </nav> <!-- end header-nav-wrap -->
-            
+
             <a class="header-menu-toggle" href="#0">
                 <span class="header-menu-icon"></span>
             </a>
@@ -139,7 +151,7 @@
             <div class="col-full">
                 <h3 data-num="01" class="subhead">Quienes Somos</h3>
                 <h1 class="display-1">
-                AprendeLessa es el sitio ideal para poder iniciar tus estudios de Lengua de Señas Salvadoreña  y poder construir una mejor sociedad. 
+                AprendeLessa es el sitio ideal para poder iniciar tus estudios de Lengua de Señas Salvadoreña  y poder construir una mejor sociedad.
                 </h1>
                 <p class="lead">
                	Construir una mejor sociedad en la cual se pueda facilitar la comunicación con las personas sordas, facilitando la integración de ellas a la sociedad.
@@ -162,8 +174,8 @@
                     <h3>Branding</h3>
                 </div>
                 <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. 
-                </p> 
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.
+                </p>
             </div>
             <div class="col-block item-process" data-aos="fade-up">
                 <div class="item-process__header item-process__header--implementation">
@@ -208,8 +220,8 @@
             <div class="col-block item-service" data-aos="fade-up">
                 <h4>Brand Identity</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
                 asperiores est commodi amet quia architecto. Dolores necessitatibus et.
                 </p>
             </div>
@@ -217,8 +229,8 @@
             <div class="col-block item-service" data-aos="fade-up">
                 <h4>Illustration</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
                 asperiores est commodi amet quia architecto. Dolores necessitatibus et.
                 </p>
             </div>
@@ -226,8 +238,8 @@
             <div class="col-block item-service" data-aos="fade-up">
                 <h4>Web Design</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
                 asperiores est commodi amet quia architecto. Dolores necessitatibus et.
                 </p>
             </div>
@@ -235,8 +247,8 @@
             <div class="col-block item-service" data-aos="fade-up">
                 <h4>Product Strategy</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
                 asperiores est commodi amet quia architecto. Dolores necessitatibus et.
                 </p>
             </div>
@@ -244,8 +256,8 @@
             <div class="col-block item-service" data-aos="fade-up">
                 <h4>UI/UX Design</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
                 asperiores est commodi amet quia architecto. Dolores necessitatibus et.
                 </p>
             </div>
@@ -253,8 +265,8 @@
             <div class="col-block item-service" data-aos="fade-up">
                 <h4>Mobile Design</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et 
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus 
+                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
+                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
                 asperiores est commodi amet quia architecto. Dolores necessitatibus et.
                 </p>
             </div>
@@ -279,12 +291,12 @@
         </div>
 
         <div class="portfolio block-1-4 block-m-1-3 block-tab-1-2 collapse">
-            
+
             <div class="col-block item-folio" data-aos="fade-up">
 
                 <div class="item-folio__thumb">
                     <a href="vista/template_principal/images/portfolio/gallery/g-lamp.jpg" class="thumb-link" title="Lamp" data-size="1050x700">
-                        <img src="vista/template_principal/images/portfolio/lamp.jpg" 
+                        <img src="vista/template_principal/images/portfolio/lamp.jpg"
                              srcset="vista/template_principal/images/portfolio/lamp.jpg 1x, vista/template_principal/images/portfolio/lamp@2x.jpg 2x" alt="">
                     </a>
                 </div>
@@ -312,7 +324,7 @@
 
                 <div class="item-folio__thumb">
                     <a href="vista/template_principal/images/portfolio/gallery/g-fuji.jpg" class="thumb-link" title="Fuji" data-size="1050x700">
-                        <img src="vista/template_principal/images/portfolio/fuji.jpg" 
+                        <img src="vista/template_principal/images/portfolio/fuji.jpg"
                              srcset="vista/template_principal/images/portfolio/fuji.jpg 1x, vista/template_principal/images/portfolio/fuji@2x.jpg 2x" alt="">
                     </a>
                 </div>
@@ -340,7 +352,7 @@
 
                 <div class="item-folio__thumb">
                     <a href="vista/template_principal/images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                        <img src="vista/template_principal/images/portfolio/woodcraft.jpg" 
+                        <img src="vista/template_principal/images/portfolio/woodcraft.jpg"
                              srcset="vista/template_principal/images/portfolio/woodcraft.jpg 1x, vista/template_principal/images/portfolio/woodcraft@2x.jpg 2x" alt="">
                     </a>
                 </div>
@@ -368,7 +380,7 @@
 
                 <div class="item-folio__thumb">
                     <a href="vista/template_principal/images/portfolio/gallery/g-droplet.jpg" class="thumb-link" title="Droplet" data-size="1050x700">
-                        <img src="vista/template_principal/images/portfolio/droplet.jpg" 
+                        <img src="vista/template_principal/images/portfolio/droplet.jpg"
                              srcset="vista/template_principal/images/portfolio/droplet.jpg 1x, vista/template_principal/images/portfolio/droplet@2x.jpg 2x" alt="">
                     </a>
                 </div>
@@ -396,7 +408,7 @@
 
                 <div class="item-folio__thumb">
                     <a href="vista/template_principal/images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                        <img src="vista/template_principal/images/portfolio/shutterbug.jpg" 
+                        <img src="vista/template_principal/images/portfolio/shutterbug.jpg"
                              srcset="vista/template_principal/images/portfolio/shutterbug.jpg 1x, vista/template_principal/images/portfolio/shutterbug@2x.jpg 2x" alt="">
                     </a>
                 </div>
@@ -424,7 +436,7 @@
 
                 <div class="item-folio__thumb">
                     <a href="vista/template_principal/images/portfolio/gallery/g-minimalismo.jpg" class="thumb-link" title="Minimalismo" data-size="1050x700">
-                        <img src="vista/template_principal/images/portfolio/minimalismo.jpg" 
+                        <img src="vista/template_principal/images/portfolio/minimalismo.jpg"
                              srcset="vista/template_principal/images/portfolio/minimalismo.jpg 1x, vista/template_principal/images/portfolio/minimalismo@2x.jpg 2x" alt="">
                     </a>
                 </div>
@@ -452,7 +464,7 @@
 
                 <div class="item-folio__thumb">
                     <a href="vista/template_principal/images/portfolio/gallery/g-film.jpg" class="thumb-link" title="Film" data-size="1050x700">
-                        <img src="vista/template_principal/images/portfolio/film.jpg" 
+                        <img src="vista/template_principal/images/portfolio/film.jpg"
                              srcset="vista/template_principal/images/portfolio/film.jpg 1x, vista/template_principal/images/portfolio/film@2x.jpg 2x" alt="">
                     </a>
                 </div>
@@ -480,7 +492,7 @@
 
                 <div class="item-folio__thumb">
                     <a href="vista/template_principal/images/portfolio/gallery/g-skaterboy.jpg" class="thumb-link" title="Skaterboy" data-size="1050x700">
-                        <img src="vista/template_principal/images/portfolio/skaterboy.jpg" 
+                        <img src="vista/template_principal/images/portfolio/skaterboy.jpg"
                              srcset="vista/template_principal/images/portfolio/skaterboy.jpg 1x, vista/template_principal/images/portfolio/skaterboy@2x.jpg 2x" alt="">
                     </a>
                 </div>
@@ -521,7 +533,7 @@
 
                     <div class="testimonials__slide">
                         <span class="testimonials__icon"></span>
-                        <p>Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum. 
+                        <p>Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum.
                         Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium praesentium corpori.</p>
                         <div class="testimonials__author">
                             <img src="vista/template_principal/images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
@@ -543,7 +555,7 @@
 
                     <div class="testimonials__slide">
                         <span class="testimonials__icon"></span>
-                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
                         Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
                         <div class="testimonials__author">
                             <img src="vista/template_principal/images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
@@ -551,7 +563,7 @@
                             <span class="testimonials__position">CEO, Microsoft</span>
                         </div>
                     </div> <!-- end testimonials__slide -->
-                    
+
                 </div> <!-- end testimonials__slider -->
 
             </div> <!-- end testimonials -->
@@ -625,7 +637,7 @@
     <section id="stats" class="s-stats">
 
         <div class="row stats-block block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-                
+
             <div class="col-block item-stats ">
                 <div class="item-stats__count">213</div>
                 <h5>Projects Completed</h5>
@@ -640,7 +652,7 @@
             </div>
             <div class="col-block item-stats">
                 <div class="item-stats__count">2319</div>
-                <h5>Cups of Coffee</h5> 
+                <h5>Cups of Coffee</h5>
             </div>
 
         </div> <!-- end stats -->
@@ -655,8 +667,8 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 data-num="05" class="subhead">Get In Touch</h3>
-                <h1 class="display-1 display-1--light">Have an idea or an epic project in mind? Talk to 
-                    us. Let’s work together and make something 
+                <h1 class="display-1 display-1--light">Have an idea or an epic project in mind? Talk to
+                    us. Let’s work together and make something
                     great. Drop us a line at <a href="mailto:#0">hello@stellar.com</a></h1>
             </div>
         </div>
@@ -698,7 +710,7 @@
         <div class="row contact-bottom">
             <div class="col-five tab-full contact-button" data-aos="fade-up">
                 <a href="#about" class="smoothscroll btn btn-animatedbg">
-                    Let's Talk 
+                    Let's Talk
                 </a>
             </div>
 

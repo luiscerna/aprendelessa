@@ -1,4 +1,10 @@
 <?php
+	session_start();
+
+	if(array_key_exists("codUsuario", $_SESSION)){
+		header("Location: principal.php");
+	}
+	
 	$titulo = "APRENDELESSA | Login";
 	include("headers_contenido.php");
 ?>
