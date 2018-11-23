@@ -20,35 +20,7 @@
 	<!-- WRAPPER -->
 	<div id="wrapper">
 		<!-- NAVBAR -->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="brand">
-				<a href="index.html"><img src="vista/template_contenido/assets/img/logo-dark.png" alt="Klorofil Logo" class="img-responsive logo"></a>
-			</div>
-			<div class="container-fluid">
-				<div class="navbar-btn">
-					<button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
-				</div>
-				<form class="navbar-form navbar-left">
-					<div class="input-group">
-						<input type="text" value="" class="form-control" placeholder="Search dashboard...">
-						<span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
-					</div>
-				</form>
-				<div id="navbar-menu">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>
-								<?php echo $_SESSION["nombre"]." ".$_SESSION["apellido"];  ?>
-							</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
-							<ul class="dropdown-menu">
-								<li><a href="perfil.php"><i class="lnr lnr-user"></i> <span>Mi perfil</span></a></li>
-								<li><a href="index.php?cerrar=true"><i class="lnr lnr-exit"></i> <span>Salir</span></a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+		<?php include("navbar.php"); ?>
 		<!-- END NAVBAR -->
 		<!-- LEFT SIDEBAR -->
 		<?php include("menu_lateral.php"); ?>
@@ -61,7 +33,7 @@
 					<!-- OVERVIEW -->
 					<div class="panel panel-headline">
 						<div class="panel-heading">
-							<h3 class="panel-title">Mi Perfil [<span class="labels-ocultar" id="lbl_correo"></span>]</h3>
+							<h3 class="panel-title">Mi Perfil [<span id="lbl_correo"></span>]</h3>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -93,7 +65,7 @@
 									<select class="form-control input-sm inputs-ocultar" id="select_sexo">
 										<option value="sexo" disabled="disabled" selected="true">Sexo</option>
 										<option value="Másculino">Másculino</option>
-										<option value="Femeino">Femenino</option>
+										<option value="Femenino">Femenino</option>
 									</select>
                 </div>
 							</div>
@@ -201,9 +173,12 @@
 
 	      }).then(response => {
 					//console.log(response.data[0].existe);
-					console.log(response.data);
+					//console.log(response.data);
+					$("#nombre-desplegable").html($("#txt_nombre").val());
+					$("#apellido-desplegable").html($("#txt_apellido").val());
 
 					cargarDatos();
+
 					$(".inputs-ocultar").hide();
 					$(".labels-ocultar").show();
 
