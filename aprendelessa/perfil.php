@@ -173,7 +173,7 @@
 
 	      }).then(response => {
 					//console.log(response.data[0].existe);
-					//console.log(response.data);
+					console.log(response);
 					$("#nombre-desplegable").html($("#txt_nombre").val());
 					$("#apellido-desplegable").html($("#txt_apellido").val());
 

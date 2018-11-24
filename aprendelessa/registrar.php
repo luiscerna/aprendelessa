@@ -82,12 +82,6 @@
 			});
     });
 
-		$(document).keypress(function(e) {
-			if(e.which == 13) {
-				guardarRegistro();
-			}
-		});
-
 		$("#btn_registrar").click(function(){
 			guardarRegistro();
 		});
