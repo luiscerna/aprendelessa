@@ -7,6 +7,9 @@
     header("Location: principal.php");
   }
 
+	// Es necesario que lo lleven todas las que tienen el menu lateral izquierdo
+	$seleccionar_navbar = "";
+
   include("Datos/Video.php");
   $video = new Video();
   $video->setCodVideo($_GET["video"]);

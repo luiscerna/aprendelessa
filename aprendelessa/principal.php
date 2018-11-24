@@ -5,6 +5,9 @@
 		header("Location: index.php");
 	}
 
+	// Es necesario que lo lleven todas las que tienen el menu lateral izquierdo
+	$seleccionar_navbar = "";
+	
 	$titulo = "APRENDELESSA | Cursos";
 	include("headers_contenido.php");
 ?>

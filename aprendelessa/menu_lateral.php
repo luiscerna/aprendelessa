@@ -4,8 +4,8 @@
       <ul class="nav">
         <li><a href="#"><i class="lnr lnr-home"></i> <span>Introducción</span></a></li>
         <li>
-          <a href="#leccion1" data-toggle="collapse" class="<?php echo ($seleccionar_navbar == "Alfabeto") ? " active": ""; ?>"><i class="lnr lnr-file-empty"></i> <span>Lección 1</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
-          <div id="leccion1" class="collapse in">
+          <a href="#leccion1" data-toggle="collapse" class="collapse<?php echo ($seleccionar_navbar == "Alfabeto") ? " active": ""; ?>"><i class="lnr lnr-file-empty"></i> <span>Lección 1</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+          <div id="leccion1" class="collapse<?php echo ($seleccionar_navbar == "Alfabeto") ? " in": ""; ?>">
             <ul class="nav">
               <li><a href="video.php?video=1" class="<?php echo ($seleccionar_navbar == "Alfabeto") ? "active": ""; ?>">Alfabeto</a></li>
               <li><a href="#" class="">Los números</a></li>
