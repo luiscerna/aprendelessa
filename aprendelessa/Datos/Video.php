@@ -14,6 +14,21 @@
       parent::__construct();
     }
 
+    // Traer los datos del video
+    public function selectVideo(){
+      $query = "SELECT etiquetas, fecha, titulo, url, views, count(*) as existe FROM video WHERE codVideo = ".parent::string($this->getCodVideo())." LIMIT 1;";
+      $result = mysqli_query(parent::conexion(), $query);
+      if($result){
+        $fila = mysqli_fetch_array($result);
+        parent::desconectar();
+        return $fila;
+      } else{
+        echo parent::conexion()->error;
+        parent::desconectar();
+        return false;
+      }
+    }
+
     public function setCodVideo($codVideo){
       $this->codVideo = $codVideo;
     }

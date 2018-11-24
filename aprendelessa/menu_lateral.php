@@ -2,14 +2,14 @@
   <div class="sidebar-scroll">
     <nav>
       <ul class="nav">
-        <li><a href="index.html" class="active"><i class="lnr lnr-home"></i> <span>Introducción</span></a></li>
+        <li><a href="#"><i class="lnr lnr-home"></i> <span>Introducción</span></a></li>
         <li>
-          <a href="#leccion1" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Lección 1</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
-          <div id="leccion1" class="collapse ">
+          <a href="#leccion1" data-toggle="collapse" class="<?php echo ($seleccionar_navbar == "Alfabeto") ? " active": ""; ?>"><i class="lnr lnr-file-empty"></i> <span>Lección 1</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+          <div id="leccion1" class="collapse in">
             <ul class="nav">
-              <li><a href="page-profile.html" class="">Alfabeto</a></li>
-              <li><a href="page-login.html" class="">Los números</a></li>
-              <li><a href="page-lockscreen.html" class="">Números ordinales y símbolos</a></li>
+              <li><a href="video.php?video=1" class="<?php echo ($seleccionar_navbar == "Alfabeto") ? "active": ""; ?>">Alfabeto</a></li>
+              <li><a href="#" class="">Los números</a></li>
+              <li><a href="#" class="">Números ordinales y símbolos</a></li>
             </ul>
           </div>
         </li>
