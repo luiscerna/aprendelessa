@@ -382,4 +382,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="vista/template_principal/js/plugins.js"></script>
     <script src="vista/template_principal/js/main.js"></script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129777927-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129777927-1');
+</script>
 </body>
