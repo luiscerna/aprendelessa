@@ -73,7 +73,6 @@
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Principal</a></li>
                     <li><a class="smoothscroll"  href="#about" title="Acerca">Acerca</a></li>
                     <li><a class="smoothscroll"  href="#services" title="servicios">Servicios</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="referebcuas">Referencias</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contactanos">Contactanos</a></li>
                     <li><a href="registrar.php" title="registrar">Registrate</a></li>
                     <li><a href="login.php"  title="iniciar">Iniciar Sesion</a></li>
@@ -130,13 +129,13 @@
 
         <ul class="home-social">
             <li>
-                <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                <a href="https://www.facebook.com/Aprende-LESSA-407376560027922/?modal=admin_todo_tour"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
             </li>
             <li>
-                <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+                <a href="https://twitter.com/AprendeLessa"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
             </li>
             <li>
-                <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+                <a href="https://www.instagram.com/aprende.lessa/"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
             </li>
         </ul> <!-- end home-social -->
 
@@ -292,9 +291,9 @@
                 <h4>Siguenos</h4>
 
                 <ul class="contact-list">
-                    <li><a href="#0">Facebook</a></li>
-                    <li><a href="#0">Twitter</a></li>
-                    <li><a href="#0">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/Aprende-LESSA-407376560027922/?modal=admin_todo_tour">Facebook</a></li>
+                    <li><a href="https://twitter.com/AprendeLessa">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/aprende.lessa/">Instagram</a></li>
                 </ul>
             </div>
 
