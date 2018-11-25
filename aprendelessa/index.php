@@ -206,10 +206,10 @@
             <div class="col-full">
                 <h3 data-num="02" class="subhead">Lo que hacemos</h3>
                 <h1 class="display-1 display-1--light">
-                Our services are tailored to make your business grow and stand out.
+                Este curso de lenguaje de señas está dirigido a personas con o sin conocimientos previos en lenguaje de señas, que deseen aprender a comunicarse con el lenguaje de señas salvadorañas.
                 </h1>
                 <p class="lead lead-light">
-                Quia iusto totam facilis ut atque quidem quis maiores iure. Facilis mollitia enim illo sed et totam commodi. Velit a recusandae sequi consequatur est dolorum. Eaque accusantium praesentium ut omnis. Laboriosam reprehenderit commodi assumenda.
+                Este curso de lessa tiene como objetivo que aprendas: El vocabulario básico e intermedio del lenguaje de señas, Los principios de la comunicación en lenguaje de señas, A comunicarte en las situaciones comunes, etc.
                 </p>
             </div>
         </div>
@@ -217,56 +217,45 @@
         <div class="row services-list block-1-3 block-m-1-2 block-tab-full">
 
             <div class="col-block item-service" data-aos="fade-up">
-                <h4>Brand Identity</h4>
+                <h4>"Escuchar" a traves de la Observación</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                Esto puede ayudarnos a conocer mejor a nuestro interlocutor, ya que los gestos nos permiten notar, por ejemplo, 
+                los estados  de ánimo, la sinceridad de lo expresado e incluso los sentimientos que a veces ni siquiera necesitamos transmitir mediante palabras.
                 </p>
             </div>
 
             <div class="col-block item-service" data-aos="fade-up">
-                <h4>Illustration</h4>
+                <h4>Alfabeto Manual</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                Las personas sordas instruidas (que sepan leer y escribir) de casi todo el mundo usan un grupo de señas para representar las letras del alfabeto con el que se escribe la lengua oral del país. Es esto lo que se denomina alfabeto manual o alfabeto dactilológico.
                 </p>
             </div>
 
             <div class="col-block item-service" data-aos="fade-up">
-                <h4>Web Design</h4>
+                <h4>Comunicación con los niños</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                A los pequeños les encanta imitar a los demás y a ello se suma que sus habilidades motoras se desarrollan más rápidamente que su capacidad de hablar, por lo que no les resulta nada difícil aprender el lenguaje de señas.
                 </p>
             </div>
 
             <div class="col-block item-service" data-aos="fade-up">
-                <h4>Product Strategy</h4>
+                <h4>Vocabulario y Gramática</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                Un vocabulario incluye todo tipo de conceptos; pero éstos permanecen aislados si falta la gramática. Tiene  que  haber  un  sistema  formal  de  normas  que  permita  elaborar expresiones coherentes, es decir, frases, proposiciones, etc.
                 </p>
             </div>
 
             <div class="col-block item-service" data-aos="fade-up">
-                <h4>UI/UX Design</h4>
+                <h4>Tabú</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                Muchos padres podrían pensar que este tipo de comunicación interfiere con el desarrollo natural del lenguaje hablado, pero tan solo lo complementa, a fin de que el proceso comunicativo sea más claro.
                 </p>
             </div>
 
             <div class="col-block item-service" data-aos="fade-up">
-                <h4>Mobile Design</h4>
+                <h4>Señas Básicas</h4>
                 <p>
-                Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
-                a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus
-                asperiores est commodi amet quia architecto. Dolores necessitatibus et.
+                Aprender algunas señas básicas es de suma importancia para las personas que estan iniciando en la cultura sorda, puesto que les ayuda a genera mayor confianza al hablar con personas sordas.
                 </p>
             </div>
 
