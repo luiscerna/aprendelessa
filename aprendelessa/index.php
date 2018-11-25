@@ -42,6 +42,24 @@
     <link rel="shortcut icon" href="favicon.png" type="vista/template_principal/image/x-icon">
     <link rel="icon" href="favicon.png" type="vista/template_principal/image/x-icon">
 
+
+    <!--OpenGraph-->
+    <meta property="og:title" content="aprendelessa">
+    <meta property="og:site_name" content="aprendelessa">
+    <meta property="og:url" content="http://aprendelessa.com/">
+    <meta property="og:description" content="Sitio dedicado a la educacion de lenguaje de señas salvadoreñas">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://aprendelessa.com/vista/template_principal/images/logo1.png">
+
+    <!--Twitter card-->
+    <meta name="twitter:card" content="sumary">
+    <meta name="twitter:site" content="@aprendelessa">
+    <meta name="twitter:creator" content="@paoaguilar09 ">
+    <meta name="twitter:url" content="http://www.aprendelessa.com/">
+    <meta name="twitter:title" content="AprendeLESSA">
+    <meta name="twitter:description" content="Sitio dedicado a la educacion de lenguaje de señas salvadoreñas">
+    <meta name="twitter:image" content="http://aprendelessa.com/vista/template_principal/images/logo1.png">
+
 </head>
 
 
