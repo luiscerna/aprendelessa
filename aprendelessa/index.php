@@ -570,27 +570,26 @@
 
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
-                <h3 data-num="05" class="subhead">Get In Touch</h3>
-                <h1 class="display-1 display-1--light">Have an idea or an epic project in mind? Talk to
-                    us. Let’s work together and make something
-                    great. Drop us a line at <a href="mailto:#0">hello@stellar.com</a></h1>
+                <h3 data-num="05" class="subhead">Sugerencias</h3>
+                <h1 class="display-1 display-1--light">Si tienes alguna idea que te gustaría que implementemos dejanoslo saber en nuestro correo, estaremos encantados de mejorar nuestro sitio.
+                    Dejanos tu comentario o sugerencia en <a href="mailto:#0">aprendelessa@gmail.com</a></h1>
             </div>
         </div>
 
         <div class="row contact-infos">
 
             <div class="col-five md-seven tab-full contact-address" data-aos="fade-up">
-                <h4>Where to Find Us</h4>
+                <h4>Donde encontrarnos</h4>
 
                 <p>
-                1600 Amphitheatre Parkway <br>
-                Mountain View, California <br>
-                94043  US
+                Ciudad Universitara <br>
+                Final 25 Av. Norte <br>
+                San Salvador
                 </p>
             </div>
 
             <div class="col-three md-five tab-full contact-social" data-aos="fade-up">
-                <h4>Follow Us</h4>
+                <h4>Siguenos</h4>
 
                 <ul class="contact-list">
                     <li><a href="#0">Facebook</a></li>
@@ -600,12 +599,10 @@
             </div>
 
             <div class="col-four md-six tab-full contact-number" data-aos="fade-up">
-                <h4>Contact Us</h4>
+                <h4>Contactanos</h4>
 
                 <ul class="contact-list">
-                    <li><a href="mailto:#0">info@stellar.com</a></li>
-                    <li><a href="tel:197-543-2345">+197 543 2345</a></li>
-                    <li><a href="tel:197-123-9876">+197 123 9876</a></li>
+                    <li><a href="mailto:#0">aprendelessa@gmail.com</a></li>
                 </ul>
             </div>
 
@@ -628,7 +625,7 @@
         <div class="row">
             <div class="col-full cl-copyright">
                 <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Aprendelessa <i class="fa fa-heart" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank"></a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </span>
             </div>
