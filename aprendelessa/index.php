@@ -73,7 +73,7 @@
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Principal</a></li>
                     <li><a class="smoothscroll"  href="#about" title="Acerca">Acerca</a></li>
                     <li><a class="smoothscroll"  href="#services" title="servicios">Servicios</a></li>
-                    <li><a class="smoothscroll"  href="#works" title="videos">Videos</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="referebcuas">Referencias</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contactanos">Contactanos</a></li>
                     <li><a href="registrar.php" title="registrar">Registrate</a></li>
                     <li><a href="login.php"  title="iniciar">Iniciar Sesion</a></li>
@@ -511,7 +511,7 @@
 
             <div class="row">
                 <div class="col-full testimonials-header">
-                    <h2 class="h1">What Clients Are Saying...</h2>
+                    <h2 class="h1">Lo que los usuarios dicen...</h2>
                 </div>
             </div>
 
