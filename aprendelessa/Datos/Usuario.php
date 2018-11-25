@@ -50,7 +50,7 @@
 
     //Seleccionar datos para login iniciarsesion.php
     public function selectIniciarSesion(){
-      $query = "SELECT codUsuario, nombre, apellido, sexo, count(*) as existe FROM usuario WHERE correo = '".parent::string($this->getCorreo())."' AND contrasenia = '".parent::string($this->getContrasenia())."' LIMIT 1;";
+      $query = "SELECT codUsuario, nombre, apellido, sexo, COUNT(*) AS existe FROM usuario WHERE correo = '".parent::string($this->getCorreo())."' AND contrasenia = '".parent::string($this->getContrasenia())."' LIMIT 1;";
       $result = mysqli_query(parent::conexion(), $query);
       if($result){
         $fila = mysqli_fetch_array($result);
@@ -65,7 +65,7 @@
 
     // Cargar datos del usuario para la parte del perfil.php
     public function cargarUsuario(){
-      $query = "SELECT nombre, apellido, sexo, DATE_FORMAT(fecha_nac, '%d/%l/%Y') as fecha_nac, correo FROM usuario WHERE codUsuario = ".parent::string($this->getCodUsuario()).";";
+      $query = "SELECT nombre, apellido, sexo, DATE_FORMAT(fecha_nac, '%d/%m/%Y') AS fecha_nac, correo FROM usuario WHERE codUsuario = ".parent::string($this->getCodUsuario()).";";
       $result = mysqli_query(parent::conexion(), $query);
       $arreglo = null;
 

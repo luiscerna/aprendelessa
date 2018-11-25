@@ -10,17 +10,26 @@
 	// Es necesario que lo lleven todas las que tienen el menu lateral izquierdo
 	$seleccionar_navbar = "";
 
+	// Cargar los datos del video
   include("Datos/Video.php");
   $video = new Video();
   $video->setCodVideo($_GET["video"]);
   $fila = $video->selectVideo();
-  if($fila["existe"] == 1){
-    echo "Todo bien";
-  } else{
-    echo "Algo ha salido mal";
+  if($fila["existe"] != 1){
+    header("Location: principal.php");
   }
-
+	// Dar el  valor del titulo del video
   $seleccionar_navbar = $fila["titulo"];
+
+	// Incrementar en 1 los views
+	$views_aumento = 0;
+	$views_aumento += $fila["views"] +1;
+
+	// Guardar la nueva cantidad de vistas
+	$video_save = new Video();
+	$video_save->setCodVideo($_GET["video"]);
+	$video_save->setViews($views_aumento);
+	$video_save->updateVistasVideo();
 
 	$titulo = "APRENDELESSA | ".$fila["titulo"];
 	include("headers_contenido.php");
@@ -45,7 +54,7 @@
 					<div class="panel panel-headline">
 						<div class="panel-heading">
 							<h3 class="panel-title">Titulo: <?php echo $seleccionar_navbar; ?></h3>
-							<p class="panel-subtitle"><?php echo $fila["fecha"]; ?></p>
+							<p class="panel-subtitle"><?php echo $fila["fecha"]; ?> | Visto: <?php echo $fila["views"]; ?></p>
 						</div>
 						<div class="panel-body">
 							<div class="row">
@@ -91,7 +100,25 @@
 	<!-- END WRAPPER -->
 	<!-- Javascript -->
 	<script>
+		$(document).ready(function(){
+			// Hay que registrar el video
 
+			var parametros = {
+				'Video_codVideo': <?php echo $_GET["video"]; ?>,
+			}
+
+			axios.get("Controlador/Reproduccion/insert_reproduccion.php", {
+
+			params: parametros
+
+			}).then(response => {
+				console.log(response);
+
+			}).catch(e => {
+				alert('Han ocurrido algunos problemas, intente nuevamente más tarde.');
+				console.log('Ha ocurrido el siguiete error: '+e);
+			});
+		});
 	</script>
 	<?php
 		include("footer_contenido.php");

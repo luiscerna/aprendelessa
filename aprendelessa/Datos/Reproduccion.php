@@ -12,6 +12,36 @@
       parent::__construct();
     }
 
+    //Insertar los videos ya vostos
+    public function insertReproduccion(){
+      $query = "INSERT INTO reproduccion (videoVisto, Usuario_codUsuario, Video_codVideo) VALUES (true, ".parent::string($this->getUsuario_codUsuario()).", ".parent::string($this->getVideo_codVideo()).");";
+      $result = mysqli_query(parent::conexion(), $query);
+      if($result){
+        $fila = mysqli_fetch_array($result);
+        parent::desconectar();
+        return $fila;
+      } else{
+        echo parent::conexion()->error;
+        parent::desconectar();
+        return false;
+      }
+    }
+
+    //Comprobar si ya existe existe la reproduccion de video con usuario
+    public function comprobarReproduccion(){
+      $query = "SELECT COUNT(*) AS existe FROM reproduccion WHERE Usuario_codUsuario = ".parent::string($this->getUsuario_codUsuario())." AND Video_codVideo = ".parent::string($this->getVideo_codVideo()).";";
+      $result = mysqli_query(parent::conexion(), $query);
+      if($result){
+        $fila = mysqli_fetch_array($result);
+        parent::desconectar();
+        return $fila;
+      } else{
+        echo parent::conexion()->error;
+        parent::desconectar();
+        return false;
+      }
+    }
+
     public function setCodReproduccion($codReproduccion){
       $this->codReproduccion = $codReproduccion;
     }

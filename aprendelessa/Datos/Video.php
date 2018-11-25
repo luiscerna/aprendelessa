@@ -29,6 +29,20 @@
       }
     }
 
+    // Actualizar número de vistas del video
+    public function updateVistasVideo(){
+      $query = "UPDATE video SET views = ".parent::string($this->getViews())." WHERE codVideo = ".parent::string($this->getCodVideo()).";";
+      $result = mysqli_query(parent::conexion(), $query);
+      if($result){
+        parent::desconectar();
+        return true;
+      } else{
+        echo parent::conexion()->error;
+        parent::desconectar();
+        return false;
+      }
+    }
+
     public function setCodVideo($codVideo){
       $this->codVideo = $codVideo;
     }
