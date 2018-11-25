@@ -163,34 +163,33 @@
 
             <div class="col-block item-process" data-aos="fade-up">
                 <div class="item-process__header item-process__header--planning">
-                    <h3>Planning</h3>
+                    <h3>Significado</h3>
                 </div>
                 <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.
+                    La lengua de señas o lengua de signos es una lengua natural de expresión y percepción visual gracias a la cual, los sordos pueden establecer un canal de comunicación con su entorno social, ya sea conformado por otros sordos o por cualquier persona que conozca la lengua de señas empleada.
                 </p>
             </div>
             <div class="col-block item-process" data-aos="fade-up">
                 <div class="item-process__header item-process__header--branding">
-                    <h3>Branding</h3>
+                    <h3>Importancia</h3>
                 </div>
                 <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.
-                </p>
+                    Enseñar, conocer y entenderse con soltura en lengua de señas es fundamental para la inclusión, pues sin ella, las personas con discapacidad auditiva pierden el acceso a la información y a la interacción diaria con amigos o seres queridos.                    
             </div>
             <div class="col-block item-process" data-aos="fade-up">
                 <div class="item-process__header item-process__header--implementation">
-                    <h3>Implementation</h3>
+                    <h3>Implementación</h3>
                 </div>
                 <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.
-                </p>
+                    Aprender este lenguaje basado en el uso de manos y gestos para describir conceptos y elaborar oraciones, ya ofrece una gran oportunidad para generar un mundo más incluyente y accesible y para crear puentes con más personas.
+                </p> 
             </div>
             <div class="col-block item-process" data-aos="fade-up">
                 <div class="item-process__header item-process__header--documentation">
-                    <h3>Documentation</h3>
+                    <h3>Dato Curioso</h3>
                 </div>
                 <p>
-                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.
+                    Se dice que si las personas sordas estuvieran reunidas en un solo lugar, formarían la cuarta nación más grande ¡del mundo! Solo en España, en 2014, el Instituto Nacional de Estadística y Geografía (INEGI) que de el 6% del país, unos siete millones de personas poseen diversidad funcional auditiva. 
                 </p>
             </div>
 
@@ -573,91 +572,7 @@
     </section> <!-- end s-works -->
 
 
-    <!-- clients
-    ================================================== -->
-    <section id="clients" class="s-clients target-section">
 
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full">
-                <h3 data-num="04" class="subhead">Selected Clients</h3>
-                <h1 class="display-1 display-1--light">Here are some of the brands we have had the priviledge to work with.</h1>
-            </div>
-        </div>
-
-        <div class="row clients-list block-1-4 block-tab-1-3 block-mob-1-2" data-aos="fade-up">
-
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="vista/template_principal/images/clients/icon-atom.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="vista/template_principal/images/clients/icon-dropbox.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="vista/template_principal/images/clients/icon-firefox.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="vista/template_principal/images/clients/icon-github.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="vista/template_principal/images/clients/icon-mozilla.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="vista/template_principal/images/clients/icon-linux.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="vista/template_principal/images/clients/icon-ubuntu.svg" alt="">
-                </a>
-            </div>
-            <div class="col-block item-client">
-                <a href="#0">
-                    <img src="vista/template_principal/images/clients/icon-sass.svg" alt="">
-                </a>
-            </div>
-
-        </div> <!-- clients-list -->
-
-    </section> <!-- end s-clients -->
-
-
-    <!-- stats
-    ================================================== -->
-    <section id="stats" class="s-stats">
-
-        <div class="row stats-block block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
-
-            <div class="col-block item-stats ">
-                <div class="item-stats__count">213</div>
-                <h5>Projects Completed</h5>
-            </div>
-            <div class="col-block item-stats">
-                <div class="item-stats__count">179</div>
-                <h5>Happy Clients</h5>
-            </div>
-            <div class="col-block item-stats">
-                <div class="item-stats__count">35</div>
-                <h5>Awards Received</h5>
-            </div>
-            <div class="col-block item-stats">
-                <div class="item-stats__count">2319</div>
-                <h5>Cups of Coffee</h5>
-            </div>
-
-        </div> <!-- end stats -->
-
-    </section> <!-- end s-stats -->
 
 
     <!-- contact
@@ -710,18 +625,8 @@
         <div class="row contact-bottom">
             <div class="col-five tab-full contact-button" data-aos="fade-up">
                 <a href="#about" class="smoothscroll btn btn-animatedbg">
-                    Let's Talk
+                    Mas acerca de nosotros
                 </a>
-            </div>
-
-            <div class="col-six tab-full contact-subscribe" data-aos="fade-up">
-                <h4>Subscribe</h4>
-
-                <form id="mc-form" class="group mc-form" novalidate="true">
-                    <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-                    <input type="submit" name="subscribe" value="Subscribe">
-                    <label for="mc-email" class="subscribe-message"></label>
-                </form>
             </div>
         </div> <!-- end contact-button -->
 
