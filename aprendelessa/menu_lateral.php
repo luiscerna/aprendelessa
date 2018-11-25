@@ -2,7 +2,7 @@
   <div class="sidebar-scroll">
     <nav>
       <ul class="nav">
-        <li><a href="#"><i class="lnr lnr-home"></i> <span>Introducción</span></a></li>
+        <li><a href="video.php?video=0"><i class="lnr lnr-home<?php echo ($seleccionar_navbar == "Introducción") ? "active": ""; ?>"></i> <span>Introducción</span></a></li>
         <li>
           <a href="#leccion1" data-toggle="collapse" class="collapse<?php echo ($seleccionar_navbar == "Alfabeto" || $seleccionar_navbar == "Los Numeros" || $seleccionar_navbar == "Números Ordinales y símbolos") ? " active": ""; ?>"><i class="lnr lnr-file-empty"></i> <span>Lección 1</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
           <div id="leccion1" class="collapse<?php echo ($seleccionar_navbar == "Alfabeto" || $seleccionar_navbar == "Los Numeros" || $seleccionar_navbar == "Números Ordinales y símbolos") ? " in": ""; ?>">
