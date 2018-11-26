@@ -36,6 +36,9 @@
 ?>
 <body>
 	<style media="screen">
+		.color-border-txt {
+			border-color: red !important;
+		}
 	</style>
 	<!-- WRAPPER -->
 	<div id="wrapper">
@@ -68,6 +71,30 @@
 					<!-- END OVERVIEW -->
           <!-- PUBLICIDAD -->
           <div class="row">
+						<div class="col-sm-8">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Comentarios</h3>
+                  <div class="right">
+                    <button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
+                  </div>
+                </div>
+                <div class="panel-body">
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<textarea class="form-control" id="txt_comentario" placeholder="Mi comentario..." rows="4"></textarea>
+											</div>
+											<button type="button" class="btn btn-primary" id="btn_comentar">Comentar</button>
+										</div>
+									</div>
+									<hr>
+									<div id="comentarios">
+
+									</div>
+                </div>
+              </div>
+            </div>
             <div class="col-sm-4">
               <div class="panel">
                 <div class="panel-heading">
@@ -112,13 +139,77 @@
 			params: parametros
 
 			}).then(response => {
-				console.log(response);
+				//console.log(response);
 
 			}).catch(e => {
 				alert('Han ocurrido algunos problemas, intente nuevamente más tarde.');
 				console.log('Ha ocurrido el siguiete error: '+e);
 			});
+
+			cargarComentarios();
 		});
+
+		// Añadir comentario
+		$("#btn_comentar").click(function(){
+			var error = "";
+
+			if($("#txt_comentario").val() == ""){
+				error += "Error";
+				$("#txt_comentario").addClass("color-border-txt");
+			} else {
+				$("#txt_comentario").removeClass("color-border-txt");
+			}
+
+			if(error == ""){
+				var parametros = {
+					'Video_codVideo': <?php echo $_GET["video"]; ?>,
+					'contenido': $("#txt_comentario").val(),
+				}
+
+				axios.get("Controlador/Comentario/insert_comentario.php", {
+
+				params: parametros
+
+				}).then(response => {
+					//console.log(response);
+					$("#txt_comentario").val("");
+
+					cargarComentarios();
+
+				}).catch(e => {
+					alert('Han ocurrido algunos problemas, intente nuevamente más tarde.');
+					console.log('Ha ocurrido el siguiete error: '+e);
+				});
+			}
+		});
+
+		function cargarComentarios() {
+			var parametros = {
+				'Video_codVideo': <?php echo $_GET["video"]; ?>,
+			}
+
+			axios.get("Controlador/Comentario/cargar_comentarios.php", {
+
+			params: parametros
+
+			}).then(response => {
+				if(response.data == null){
+					console.log("Lo siento bra");
+				} else {
+					var html = "";
+					for(var i=0;i<response.data.length;i++){
+						html += `<h4>${response.data[i].nombre} [${response.data[i].fechaHora}]</h4>
+										 <p>${response.data[i].contenido}</p><br>`;
+					}
+					//
+					console.log(response);
+					$("#comentarios").html(html);
+				}
+			}).catch(e => {
+				alert('Han ocurrido algunos problemas, intente nuevamente más tarde.');
+				console.log('Ha ocurrido el siguiete error: '+e);
+			});
+		}
 	</script>
 	<?php
 		include("footer_contenido.php");

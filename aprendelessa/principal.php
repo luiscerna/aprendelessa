@@ -7,7 +7,7 @@
 
 	// Es necesario que lo lleven todas las que tienen el menu lateral izquierdo
 	$seleccionar_navbar = "";
-	
+
 	$titulo = "APRENDELESSA | Cursos";
 	include("headers_contenido.php");
 ?>
@@ -49,7 +49,7 @@
 		<div class="clearfix"></div>
 		<footer>
 			<div class="container-fluid">
-				<p class="copyright">&copy; 2017 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p>
+				<!-- <p class="copyright">&copy; 2017 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p> -->
 			</div>
 		</footer>
 	</div>
