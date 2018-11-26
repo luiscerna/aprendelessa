@@ -46,7 +46,7 @@
         $this->Palabra_codPalabra=$fila[3];
         $this->Video_codVideo=$fila[4];
         $this->video=new Video();
-        $this->video->llenarVideo();
+        $this->video->llenarVideo($this->Video_codVideo);
         parent::desconectar();
         return true;
       } else{
@@ -94,6 +94,14 @@
 
     public function getVideo_CodVideo(){
       return $this->Palabra_codPalabra;
+    }
+    
+    public function setVideo($video){
+      $this->video = $video;
+    }
+
+    public function getVideo(){
+      return $this->video;
     }
   }
 ?>  
