@@ -14,8 +14,8 @@
           </div>
         </li>
         <li>
-          <a href="#leccion2" data-toggle="collapse" class="collapsed<?php echo ($seleccionar_navbar == "Normas de Cortesía" || $seleccionar_navbar == "Normas de Cortesía Parte 2") ? " active": ""; ?>"><i class="lnr lnr-file-empty"></i> <span>Lección 2</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
-          <div id="leccion2" class="collapse<?php echo ($seleccionar_navbar == "Normas de Cortesía" || $seleccionar_navbar == "Normas de Cortesía Parte 2") ? " in": ""; ?>">
+          <a href="#leccion2" data-toggle="collapse" class="collapsed<?php echo ($seleccionar_navbar == "Normas de Cortesía Parte 1" || $seleccionar_navbar == "Normas de Cortesía Parte 2") ? " active": ""; ?>"><i class="lnr lnr-file-empty"></i> <span>Lección 2</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+          <div id="leccion2" class="collapse<?php echo ($seleccionar_navbar == "Normas de Cortesía Parte 1" || $seleccionar_navbar == "Normas de Cortesía Parte 2") ? " in": ""; ?>">
             <ul class="nav">
               <li><a href="video.php?video=11" class="<?php echo ($seleccionar_navbar == "Normas de Cortesía Parte 1") ? "active": ""; ?>">Normas de cortesía - Parte 1</a></li>
               <li><a href="video.php?video=8" class="<?php echo ($seleccionar_navbar == "Normas de Cortesía Parte 2") ? "active": ""; ?>">Normas de cortesía - Parte 2</a></li>
