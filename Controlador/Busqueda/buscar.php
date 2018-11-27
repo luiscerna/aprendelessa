@@ -5,6 +5,7 @@ include_once '../../Datos/Palabra.php';
 
 $resultados=array();
 $mensaje='';
+$coincidencia1=new Coincidencia();
 
 if($_POST){
 	
@@ -18,14 +19,10 @@ if($_POST){
         $codPalabras=$palabra->obtenerPalabras($busqueda);//obtener los cod de la tabla palabra
 	if (!empty($codPalabras)){ 
             // Si se encontraron palabras, se busca en la tabla coincidencia
-            $coincidencia1=new Coincidencia();
+            
             foreach ($codPalabras as $value) {
-                $codCoincidencias=$coincidencia1->obtenerCodCoincidencias($value);//Obtener los cod de la tabla coincidencias
-                foreach ($codCoincidencias as $coin){
-                    $coincidencia1->llenarCoincidencia($coin);
-                    array_push($resultados, $coincidencia1);//Crea una coincidencias por cada cod, y automaticamente obtiene el video.
-                    $numResul.=1;
-                }
+                $resultados=$coincidencia1->obtenerCodCoincidencias($value);//Obtener los cod de la tabla coincidencias
+                
             }
             $mensaje="Se obtuvieron ".$numResul." Resultados.";
 	}else{
@@ -37,25 +34,42 @@ if($_POST){
 
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Busqueda</title>
-  <!--<link rel="stylesheet" href="">-->
-</head>
+<?php
+  session_start();
+
+  /*if(!array_key_exists("codUsuario", $_SESSION)){
+    header("Location: index.php");
+  }*/
+
+  // Es necesario que lo lleven todas las que tienen el menu lateral izquierdo
+  $seleccionar_navbar = "";
+  
+  $titulo = "Busqueda";
+  include "headers_contenido.php";
+?>
 <body>
-   <form id="buscador" name="buscador" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>"> 
-    <input id="buscar" name="buscar" type="search" placeholder="Busqueda..." autofocus >
-    <input type="submit" name="buscador" class="boton peque aceptar" value="buscar">
+   <!--<form class="navbar-form navbar-left" id="buscador" name="buscador" method="post" action="<?php //echo $_SERVER['PHP_SELF'] ?>"> 
+    <div class="input-group">
+    <input id="buscar" name="buscar" type="search" class="form-control" placeholder="Busqueda..." autofocus >
+    <span class="input-group-btn"><input type="submit" name="buscador" class="btn btn-primary" value="buscar"></span>
+    </div>
   </form>
+-->
+
+  <?php include("navbar.php"); ?>
 
     <?php
-    foreach ($resultados as $coincidencia) {
-        $video=$coincidencia->getVideo();
-        $tiempo=(int)$coincidencia->getMinuto();
+        echo "`<p>".$mensaje."</p>";
+    foreach ($resultados as $coin) {
+        $coincidencia1->llenarCoincidencia($coin);
+        $numResul.=1; 
+        $video=$coincidencia1->getVideo();
+        $tiempo=(int)$coincidencia1->getMinuto();
         $tiempo=$tiempo*60;
-        $tiempo.=(int)$coincidencia->getSegundo();
-        echo "<iframe class=\"videoResultado\" width=\"70%\" height=auto src=\"https://www.youtube.com/embed/".$video->getUrl()."?start=".$tiempo." frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+        $tiempo.=(int)$coincidencia1    ->getSegundo();
+        
+        echo "<div class=\"panel panel-headline\"><div class=\"contenedorVideo\"><div class=\"youtube-player\"><iframe src=\"https://www.youtube.com/embed/".$video->getUrl()."?rel=0&showinfo=0&start=".$tiempo."\" frameborder=\"0\" allow=\"accelerometer; autoplay;  encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div></div></div>";
+        
     }
     ?>
 </body>
