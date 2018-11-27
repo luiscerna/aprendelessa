@@ -1,5 +1,5 @@
 <?php
-  include("Conexion.php");
+  include_once 'Conexion.php';
 
   class Video extends Conexion {
 
@@ -12,6 +12,27 @@
 
     public function __construct(){
       parent::__construct();
+    }
+    
+    //llenar datos de Video
+    public function llenarVideo($codVideo){
+      $query = "SELECT codVideo, etiquetas, fecha, titulo, url, views FROM video WHERE codVideo = ".$codVideo.";";
+      $result = mysqli_query(parent::conexion(), $query);
+      if($result){
+        $fila = mysqli_fetch_array($result);
+        $this->codVideo=$fila[0];
+        $this->etiquetas=$fila[1];
+        $this->fecha=$fila[2];
+        $this->titulo=$fila[3];
+        $this->url=$fila[4];
+        
+        parent::desconectar();
+        return true;
+      } else{
+        //echo parent::conexion()->error;
+        parent::desconectar();
+        return false;
+      }
     }
 
     // Traer los datos del video
