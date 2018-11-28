@@ -650,11 +650,70 @@ fieldset[disabled] .btn {
       outline: none; }
       .panel .panel-heading button i {
         font-size: 14px; }
-	.contenedorVideo{
+  .relleno {
+    height: 9em;
+    width: 100%;
+    position: relative;
+    background-color: #ffff;
+    vertical-align: bottom;
+    text-align: center;
+    color: black;
+  }
+  .relleno-hijo {
+    text-align: center;
+    color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    vertical-align: bottom;
+  }
+	.contenedorBusqueda{
+    /*position: relative;*/
+    background-color: #ffff;
+    width: 100%;
+    padding: 1%;
+    display: block;
+    height: auto;
+    margin-top: 1%;
+  }
+  .contenedorVideo{
+      /*position: absolute;
+      top: 1%;
+      left: 1%;*/
       width: 50%;
       height: auto;
-      padding-top: 4%;
-      padding-bottom: 3%;
+      display: inline-block;
+      vertical-align: top;
+      -webkit-box-shadow: -1px 5px 14px 4px rgba(0,0,0,0.3); 
+      box-shadow: -1px 5px 14px 4px rgba(0,0,0,0.3);
+    }
+    .contenedorResultado{
+      /*position: absolute;
+      top: 1%;
+      right: 1%;*/
+      /*float: right;*/
+      height: 100%;
+      display: inline-block;
+      vertical-align: top;
+      width: 40%;
+      padding: 1em;
+      margin-left: 1.5em;
+      -webkit-box-shadow: -1px 5px 14px 4px rgba(0,0,0,0.3); 
+      box-shadow: -1px 5px 14px 4px rgba(0,0,0,0.3);
+    }
+    .contenedorResultado table tr td {
+      width: 50%;
+      padding:0.75em;
+      padding-left: 1em; 
+      color: #4E4747;
+    }
+    .contenedorResultado table tr td span {
+      font-family: serif;
+      color: #060606;
+      font-size: 1.1em;
+    }
+    .contenedorResultado table tr td b {
+      color: #48587C;
     }
     .youtube-player {
         position: relative;

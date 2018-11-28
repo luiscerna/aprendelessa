@@ -8,7 +8,7 @@
     </div>
     <form class="navbar-form navbar-left" id="buscador" name="buscador" method="post" action="Controlador/Busqueda/buscar.php">
       <div class="input-group">
-        <input id="buscar" name="buscar" type="search" class="form-control" placeholder="Busqueda...">
+        <input id="buscar" name="buscar" type="search" class="form-control" placeholder="Buscar palabra en LESSA">
         <span class="input-group-btn"><input type="submit" name="buscador" class="btn btn-primary" value="buscar"></span>
       </div>
     </form>

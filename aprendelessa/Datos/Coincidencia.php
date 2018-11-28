@@ -1,6 +1,7 @@
 <?php
   include_once "Conexion.php";
   include_once 'Video.php';
+  include_once 'Palabra.php';
 
   class Coincidencia extends Conexion {
 
@@ -10,6 +11,7 @@
     private $Palabra_codPalabra;
     private $Video_codVideo;
     private $video;
+    private $palabra;
 
     public function __construct(){
       parent::__construct();
@@ -47,6 +49,8 @@
         $this->Video_codVideo=$fila[4];
         $this->video=new Video();
         $this->video->llenarVideo($this->Video_codVideo);
+        $this->palabra=new Palabra();
+        $this->palabra->llenarPalabra($this->Palabra_codPalabra);
         parent::desconectar();
         return true;
       } else{
@@ -102,6 +106,13 @@
 
     public function getVideo(){
       return $this->video;
+    }
+    public function setPalabra($palabra){
+      $this->palabra = $palabra;
+    }
+
+    public function getPalabra(){
+      return $this->palabra;
     }
   }
 ?>  

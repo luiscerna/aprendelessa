@@ -4,11 +4,11 @@
   </div>
   <div class="container-fluid">
     <div class="navbar-btn">
-      <button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+      
     </div>
     <form class="navbar-form navbar-left" id="buscador" name="buscador" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
       <div class="input-group">
-        <input id="buscar" name="buscar" type="search" class="form-control" placeholder="Busqueda...">
+        <input id="buscar" name="buscar" type="search" class="form-control" placeholder="Buscar palabra en LESSA">
         <span class="input-group-btn"><input type="submit" name="buscador" class="btn btn-primary" value="buscar"></span>
       </div>
     </form>
