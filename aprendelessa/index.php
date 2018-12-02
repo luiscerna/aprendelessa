@@ -122,9 +122,9 @@
                 LESSA.
                 </h1>
 
-                <div class="home-content__button">
-                    <a href="#about" class="smoothscroll btn btn-animatedbg">
-                        Más acerca de nosotros
+                <div>
+                    <a href="login.php" class="btn btn"> <!--clas="smoothscroll btn btn-animatedbg"-->
+                        Iniciar Curso
                     </a>
                 </div>
 
