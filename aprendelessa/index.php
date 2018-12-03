@@ -17,9 +17,12 @@
 
     <!--- basic page needs
     ================================================== -->
+
+    <!--Meta informacion-->
     <meta charset="utf-8">
     <title>AprendeLessa</title>
-    <meta name="description" content="">
+    <meta name="description" content="Creemos en una novedosa forma de aprendizaje de LESSA.">
+    <meta name="keywords" content="aprendelessa.com, www.aprendelessa.com, aprendelessa, lecciones, aprendizaje con manos, lenguaje de señas, conocimiento, videos">
     <meta name="author" content="">
 
     <!-- mobile specific metas
@@ -409,4 +412,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
   gtag('config', 'UA-129777927-1');
 </script>
+
+<!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "http://www.aprendelessa.com",
+      "address":{
+        "@type":"PostalAddress",
+        "addressLocality":"San Salvador",
+        "addressRegion":"El Salvador",
+        "postalCode":"1101",
+        "streetAddres":"Blvr de los Heroes, 25 avenida norte"
+      },
+      "sameAs":[
+        "https://www.facebook.com/aprendelessa",
+        "https://twitter.com/AprendeLessa",
+        "https://www.instagram.com/aprende.lessa/"
+      ]
+    }
+    </script>
 </body>
