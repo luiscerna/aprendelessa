@@ -130,7 +130,6 @@
 	<script>
 		$(document).ready(function(){
 			// Hay que registrar el video
-
 			var parametros = {
 				'Video_codVideo': <?php echo $_GET["video"]; ?>,
 			}
@@ -197,6 +196,7 @@
 				if(response.data == null){
 					console.log("Lo siento bra");
 				} else {
+					//console.log(response.data);
 					var html = "";
 					for(var i=0;i<response.data.length;i++){
 						html += `<h4>${response.data[i].nombre} [${response.data[i].fechaHora}]</h4>
