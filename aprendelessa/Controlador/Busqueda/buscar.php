@@ -73,14 +73,14 @@ if($_POST){
         $tiempo=(int)$coincidencia1->getMinuto();
         $tiempo=$tiempo*60;
         $tiempo+=(int)$coincidencia1    ->getSegundo();
-          echo "<div class=\"contenedorBusqueda\">
-                  <div class=\"contenedorVideo\">
+          echo "<div data-busqueda=\"contenedorBusqueda\">
+                  <div data-busqueda=\"contenedorVideo\">
                     <div class=\"youtube-player\">
                       <iframe src=\"https://www.youtube.com/embed/".$video->getUrl()."?color=white&iv_load_policy=3&showinfo=0&rel=0&start=".$tiempo."\" frameborder=\"0\" allow=\"accelerometer; autoplay;  encrypted-media; gyroscope; picture-in-picture\" allowfullscreen>
                       </iframe>
                     </div>
                   </div>
-                  <div class=\"contenedorResultado\">
+                  <div data-busqueda=\"contenedorResultado\">
                     <table>
                       <tr> 
                         <td><span>Video:&nbsp; </span>".$video->getTitulo()."</td>

@@ -667,7 +667,7 @@ fieldset[disabled] .btn {
     bottom: 0px;
     vertical-align: bottom;
   }
-	.contenedorBusqueda{
+	div[data-busqueda='contenedorBusqueda']{
     /*position: relative;*/
     background-color: #ffff;
     width: 100%;
@@ -676,7 +676,7 @@ fieldset[disabled] .btn {
     height: auto;
     margin-top: 1%;
   }
-  .contenedorVideo{
+  div[data-busqueda='contenedorVideo']{
       /*position: absolute;
       top: 1%;
       left: 1%;*/
@@ -687,7 +687,7 @@ fieldset[disabled] .btn {
       -webkit-box-shadow: -1px 5px 14px 4px rgba(0,0,0,0.3); 
       box-shadow: -1px 5px 14px 4px rgba(0,0,0,0.3);
     }
-    .contenedorResultado{
+    div[data-busqueda='contenedorResultado']{
       /*position: absolute;
       top: 1%;
       right: 1%;*/

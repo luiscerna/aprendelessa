@@ -21,9 +21,14 @@
     <!--Meta informacion-->
     <meta charset="utf-8">
     <title>AprendeLessa</title>
-    <meta name="description" content="Creemos en una novedosa forma de aprendizaje de LESSA.">
-    <meta name="keywords" content="aprendelessa.com, www.aprendelessa.com, aprendelessa, lecciones, aprendizaje con manos, lenguaje de señas, conocimiento, videos">
-    <meta name="author" content="">
+    <meta name="copyright" content="Aprendelessa.com">
+    <meta name="topic" content="Curso de Lenguaje de Señas Salvadoreñas">
+    <meta name="country" content="El Salvador">
+    <meta name="robots" content="index,follow">
+    <meta name="revised" content="Lunes, 03 de diciembre, 2018, 22:50">
+    <meta name="language" content="ES">
+    <meta name="description" content="Sitio dedicado a la educación de lenguaje de señas   salvadoreñas online y gratis.">
+    <meta name="author" content="Equipo Aprendelessa.com">
 
     <!-- mobile specific metas
     ================================================== -->
