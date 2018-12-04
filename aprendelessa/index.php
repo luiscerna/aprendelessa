@@ -48,7 +48,7 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="icon" href="Imagenes/logo.png" type="vista/template_principal/image/x-icon">
+    <link rel="icon" type="img/png" href="Imagenes/logo_manitas.ico" />
 
 
     <!--OpenGraph-->
