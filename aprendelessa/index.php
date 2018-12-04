@@ -48,7 +48,8 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="icon" type="img/png" href="Imagenes/logo_manitas.ico" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="icon" href="logo.png" type="image/x-icon">
 
 
     <!--OpenGraph-->
