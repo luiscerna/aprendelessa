@@ -20,8 +20,7 @@
 	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<!-- ICONS -->
-	<link rel="apple-touch-icon" sizes="76x76" href="vista/template_contenido/assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="vista/template_contenido/assets/img/favicon.png">
+	<link rel="icon" href="Imagenes/logo.png" type="vista/template_principal/image/x-icon">
 	<!-- CODIGOS DE JQUERY UI -->
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 

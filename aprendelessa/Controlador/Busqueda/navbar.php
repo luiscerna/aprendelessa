@@ -4,7 +4,7 @@
   </div>
   <div class="container-fluid">
     <div class="navbar-btn">
-      
+
     </div>
     <form class="navbar-form navbar-left" id="buscador" name="buscador" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
       <div class="input-group">

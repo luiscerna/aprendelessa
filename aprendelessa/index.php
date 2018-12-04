@@ -28,7 +28,8 @@
     <meta name="revised" content="Lunes, 03 de diciembre, 2018, 22:50">
     <meta name="language" content="ES">
     <meta name="description" content="Sitio dedicado a la educación de lenguaje de señas   salvadoreñas online y gratis.">
-    <meta name="author" content="Equipo Aprendelessa.com">
+    <meta name="author" content="Equipo Aprendelessa.com, Estudiantes de Ingeniería de Sistemas Informáticos, Universidad de El Salvador, UES">
+    <meta name="keywords" content="aprendelessa, aprendelessa.com, aprende, lessa, lenguaje de señas salvadoreñas, El Salvador, LESSA, APRENDELESSA, Lenguaje de Señas">;
 
     <!-- mobile specific metas
     ================================================== -->
@@ -47,8 +48,7 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="favicon.png" type="vista/template_principal/image/x-icon">
-    <link rel="icon" href="favicon.png" type="vista/template_principal/image/x-icon">
+    <link rel="icon" href="Imagenes/logo.png" type="vista/template_principal/image/x-icon">
 
 
     <!--OpenGraph-->
@@ -91,7 +91,7 @@
         <div class="row">
 
             <div class="header-logo">
-                <a class="site-logo"> <img src="vista/template_principal/images/logo1.png" alt="Homepage"></a>
+                <a class="site-logo"> <img src="vista/template_principal/images/logo1.png" alt="aprendelessa"></a>
             </div>
 
             <nav class="header-nav-wrap">
@@ -199,7 +199,7 @@
                     <h3>Importancia</h3>
                 </div>
                 <p>
-                    Enseñar, conocer y entenderse con soltura en lengua de señas es fundamental para la inclusión, pues sin ella, las personas con discapacidad auditiva pierden el acceso a la información y a la interacción diaria con amigos o seres queridos.                    
+                    Enseñar, conocer y entenderse con soltura en lengua de señas es fundamental para la inclusión, pues sin ella, las personas con discapacidad auditiva pierden el acceso a la información y a la interacción diaria con amigos o seres queridos.
             </div>
             <div class="col-block item-process" data-aos="fade-up">
                 <div class="item-process__header item-process__header--implementation">
@@ -207,14 +207,14 @@
                 </div>
                 <p>
                     Aprender este lenguaje basado en el uso de manos y gestos para describir conceptos y elaborar oraciones, ya ofrece una gran oportunidad para generar un mundo más incluyente y accesible y para crear puentes con más personas.
-                </p> 
+                </p>
             </div>
             <div class="col-block item-process" data-aos="fade-up">
                 <div class="item-process__header item-process__header--documentation">
                     <h3>Dato Curioso</h3>
                 </div>
                 <p>
-                    Se dice que si las personas sordas estuvieran reunidas en un solo lugar, formarían la cuarta nación más grande ¡del mundo! Solo en España, en 2014, el Instituto Nacional de Estadística y Geografía (INEGI) que de el 6% del país, unos siete millones de personas poseen diversidad funcional auditiva. 
+                    Se dice que si las personas sordas estuvieran reunidas en un solo lugar, formarían la cuarta nación más grande ¡del mundo! Solo en España, en 2014, el Instituto Nacional de Estadística y Geografía (INEGI) que de el 6% del país, unos siete millones de personas poseen diversidad funcional auditiva.
                 </p>
             </div>
 
@@ -244,7 +244,7 @@
             <div class="col-block item-service" data-aos="fade-up">
                 <h4>"Escuchar" a traves de la Observación</h4>
                 <p>
-                Esto puede ayudarnos a conocer mejor a nuestro interlocutor, ya que los gestos nos permiten notar, por ejemplo, 
+                Esto puede ayudarnos a conocer mejor a nuestro interlocutor, ya que los gestos nos permiten notar, por ejemplo,
                 los estados  de ánimo, la sinceridad de lo expresado e incluso los sentimientos que a veces ni siquiera necesitamos transmitir mediante palabras.
                 </p>
             </div>

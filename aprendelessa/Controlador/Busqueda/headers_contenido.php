@@ -7,7 +7,7 @@
   </title>
 	<meta charset="utf-8">
 	 <meta charset="encoding">
-	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<!-- VENDOR CSS -->
@@ -22,8 +22,8 @@
 	<!-- GOOGLE FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<!-- ICONS -->
-	<link rel="apple-touch-icon" sizes="76x76" href="../../vista/template_contenido/assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../../vista/template_contenido/assets/img/favicon.png">
+	<link rel="icon" href="../../Imagenes/logo.png" type="../../vista/template_principal/image/x-icon">
+
 	<!-- CODIGOS DE JQUERY UI -->
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
