@@ -48,8 +48,7 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="icon" href="Imagenes/logo.png" type="vista/template_principal/image/x-icon">
 
 
     <!--OpenGraph-->
