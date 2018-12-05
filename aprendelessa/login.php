@@ -34,12 +34,6 @@
 							<div class="form-group">
 								<input type="password" class="form-control" id="txt_contrasenia" placeholder="Contraseña">
 							</div>
-							<div class="form-group clearfix">
-								<label class="fancy-checkbox element-left">
-									<input type="checkbox">
-									<span>Recordar</span>
-								</label>
-							</div>
 							<button type="submit" class="btn btn-primary btn-lg btn-block" id="btn_inicia_sesion">INICIAR SESIÓN</button>
 							<p>¿No tienes una cuenta?    <a href="registrar.php">Registrate</a></p>
 						</div>
