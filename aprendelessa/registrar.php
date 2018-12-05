@@ -51,7 +51,7 @@
 								<input type="email" class="form-control" id="txt_correo" placeholder="Correo">
 							</div>
 							<div class="form-group">
-								<input type="password" class="form-control" id="txt_contrasenia" placeholder="Contreña">
+								<input type="password" class="form-control" id="txt_contrasenia" placeholder="Contraseña">
 							</div>
 							<button class="btn btn-primary btn-lg btn-block" id="btn_registrar">REGISTRAR</button>
 							<p>¿Ya tienes una cuenta?   <a href="login.php">Iniciar Sesión</a></p>
