@@ -15,13 +15,9 @@
     <div id="navbar-menu">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>
+          <a href="../../perfil.php" class="dropdown-toggle" data-toggle="dropdown"><span>
             <span id="nombre-desplegable"><?php echo $_SESSION["nombre"]; ?></span> <span id="apellido-desplegable"><?php echo $_SESSION["apellido"]; ?></span>
-          </span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="../../perfil.php"><i class="lnr lnr-user"></i> <span>Mi perfil</span></a></li>
-            <li><a href="../../index.php?cerrar=true"><i class="lnr lnr-exit"></i> <span>Salir</span></a></li>
-          </ul>
+          </span> </a>
         </li>
       </ul>
     </div>
