@@ -60,7 +60,7 @@
 					<div class="right">
 						<div class="overlay"></div>
 						<div class="content text">
-							<h1 class="heading">¡Registrate para prender LESSA!</h1>
+							<h1 class="heading">¡Registrate para aprender LESSA!</h1>
 						</div>
 					</div>
 					<div class="clearfix"></div>

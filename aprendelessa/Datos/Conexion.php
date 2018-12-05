@@ -15,7 +15,7 @@
     }
 
     public function conexion(){
-      $this->conexion = mysqli_connect($this->host, $this->user, $this->pass, $this->bd) or die("Algo ha salido mal en la conexión a la base de datos.");;
+      $this->conexion = mysqli_connect($this->host, $this->user, $this->pass, $this->bd) or die("Algo ha salido mal en la conexión a la base de datos.");
       //echo "Ha salido bien la conexion";
       return $this->conexion;
     }

@@ -17,7 +17,7 @@
 
     //Insertar usuario desde registrar.php
     public function insertUsuario(){
-      $query = "INSERT INTO usuario (nombre, apellido, sexo, fecha_nac, correo, contrasenia) VALUES ('".parent::string($this->getNombre())."', '".parent::string($this->getApellido())."', '".parent::string($this->getSexo())."', '".parent::string($this->getFecha_Nac())."', '".parent::string($this->getCorreo())."', '".parent::string($this->getContrasenia())."');";
+      $query = "INSERT INTO usuario (nombre, apellido, sexo, fecha_nac, correo, contrasenia) VALUES ('".parent::string($this->getNombre())."', '".parent::string($this->getApellido())."', '".parent::string($this->getSexo())."', '".parent::string($this->getFecha_Nac())."', '".parent::string($this->getCorreo())."', '".md5(md5("PAO%%%%0001TPIPSADSADasdsad").parent::string($this->getContrasenia()))."');";
       $result = mysqli_query(parent::conexion(), $query);
       if($result){
         $fila = mysqli_fetch_array($result);
@@ -50,7 +50,7 @@
 
     //Seleccionar datos para login iniciarsesion.php
     public function selectIniciarSesion(){
-      $query = "SELECT codUsuario, nombre, apellido, sexo, COUNT(*) AS existe FROM usuario WHERE correo = '".parent::string($this->getCorreo())."' AND contrasenia = '".parent::string($this->getContrasenia())."' LIMIT 1;";
+      $query = "SELECT codUsuario, nombre, apellido, sexo, COUNT(*) AS existe FROM usuario WHERE correo = '".parent::string($this->getCorreo())."' AND contrasenia = '".md5(md5("PAO%%%%0001TPIPSADSADasdsad").parent::string($this->getContrasenia()))."' LIMIT 1;";
       $result = mysqli_query(parent::conexion(), $query);
       if($result){
         $fila = mysqli_fetch_array($result);
@@ -96,7 +96,7 @@
 
     //Comprobar si el correo ya está registrado registrar.php
     public function comprobarContrasenia(){
-      $query = "SELECT COUNT(*) AS iguales FROM usuario WHERE codUsuario = ".parent::string($this->getCodUsuario())." AND contrasenia = '".parent::string($this->getContrasenia())."';";
+      $query = "SELECT COUNT(*) AS iguales FROM usuario WHERE codUsuario = ".parent::string($this->getCodUsuario())." AND contrasenia = '".md5(md5("PAO%%%%0001TPIPSADSADasdsad").parent::string($this->getContrasenia()))."';";
       $result = mysqli_query(parent::conexion(), $query);
       $arreglo = null;
 
@@ -114,7 +114,7 @@
 
     // Cambiar contraseña
     public function cambiarContrasenia($contrasenia_nueva){
-      $query = "UPDATE usuario SET contrasenia = '".parent::string($contrasenia_nueva)."' WHERE codUsuario = ".parent::string($this->getCodUsuario())." AND contrasenia = '".parent::string($this->getContrasenia())."';";
+      $query = "UPDATE usuario SET contrasenia = '".md5(md5("PAO%%%%0001TPIPSADSADasdsad").parent::string($contrasenia_nueva))."' WHERE codUsuario = ".parent::string($this->getCodUsuario())." AND contrasenia = '".md5(md5("PAO%%%%0001TPIPSADSADasdsad").parent::string($this->getContrasenia()))."';";
       $result = mysqli_query(parent::conexion(), $query);
       if($result){
         parent::desconectar();
