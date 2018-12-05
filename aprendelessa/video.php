@@ -106,9 +106,8 @@
                 </div>
                 <div class="panel-body">
                   <!-- AGREGAR IMAGEN DE PUBLICIDAD -->
-                  <!-- <img class="irc_mi" src="https://img.elcomercio.pe/files/article_content_ec_fotos/uploads/2017/09/09/59b40d3d89b49.jpeg"alt="Resultado de imagen para anuncios lenguaje de señas" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" style="margin-top: 0px;" width="615" height="353"> -->
-                  <a href="https://www.youtube.com/watch?v=Wpyl1PC7nTM">
-                  	<img class="irc_mi" src="https://img.elcomercio.pe/files/article_content_ec_fotos/uploads/2017/09/09/59b40d3d89b49.jpeg"alt="Resultado de imagen para anuncios lenguaje de señas" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" style="margin-top: 0px;" width="615" height="353">
+                  <a href="https://www.ceibal.edu.uy/es/articulo/ceibal-lsu-en-las-tablets">
+                  	<img class="irc_mi" src="https://img.elcomercio.pe/files/article_content_ec_fotos/uploads/2017/09/09/59b40d3d89b49.jpeg"alt="Resultado de imagen para anuncios lenguaje de señas" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" style="margin-top: 0px;" width="352" height="353">
                   </a>
                 </div>
               </div>
