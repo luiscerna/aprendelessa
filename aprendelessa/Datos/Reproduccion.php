@@ -42,6 +42,24 @@
       }
     }
 
+    //Cargas las reproducciones cargadas en base al id del usuario
+    public function cargarVideosYaVistos(){
+      $query = "SELECT Video_codVideo FROM reproduccion WHERE Usuario_codUsuario = ".parent::string($this->getUsuario_codUsuario())." ORDER BY Video_codVideo ASC;";
+      $result = mysqli_query(parent::conexion(), $query);
+      $arreglo = null;
+
+      if(!$result){
+          die("Error");
+      } else{
+        while($data = mysqli_fetch_assoc($result)){
+          $arreglo[] = $data;
+        }
+      }
+
+      parent::desconectar();
+      return json_encode($arreglo);
+    }
+
     public function setCodReproduccion($codReproduccion){
       $this->codReproduccion = $codReproduccion;
     }

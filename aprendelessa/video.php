@@ -203,7 +203,7 @@
 										 <p>${response.data[i].contenido}</p><br>`;
 					}
 					//
-					console.log(response);
+					//console.log(response);
 					$("#comentarios").html(html);
 				}
 			}).catch(e => {
