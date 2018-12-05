@@ -30,8 +30,13 @@
 					<!-- OVERVIEW -->
 					<div class="panel panel-headline">
 						<div class="panel-heading">
-							<h3 class="panel-title">Weekly Overview</h3>
-							<p class="panel-subtitle">Period: Oct 14, 2016 - Oct 21, 2016</p>
+							<center>
+							<h3 class="panel-title">Bienvenidos al curso de Aprende LESSA!!</h3>
+							<img src="Imagenes/oskr.jpg">
+							</center>
+							<p class="panel-subtitle">Mi nombre es Oscar, y seré tu instructor de Lengua de Señas Salvadoreñas. Espero que este curso sea de tu agrado y que puedas ponerlo en práctica las veces que sean necesarias para que sigas reforzando tus conocimientos. 
+							A lo largo de los días se seguirán actualizando más videos, y no olvides que puedes enviarnos todas tus sugerencias a la cuenta de aprendelessa@gmail.com. 
+							Es un gusto acompañarte en este viaje de aprendizaje.</p>
 						</div>
 						<div class="panel-body">
 							<div class="row">
